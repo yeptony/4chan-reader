@@ -1,0 +1,48 @@
+@import "../node_modules/materialize-css/dist/css/materialize.min.css";
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.yep-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.yep-main {
+  flex: 1 0 auto;
+}
+
+.yep-dropdown-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.yep-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 66px;
+  ul {
+    margin: 0;
+    max-height: 45vh;
+    overflow: auto;
+    li:hover {
+      background-color: #eee;
+      cursor: pointer;
+    }
+  }
+}
+
+.collection {
+  border: none;
+}
