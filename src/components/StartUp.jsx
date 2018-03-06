@@ -65,7 +65,6 @@ class StartUp extends React.Component {
   }
 
   handleBlur(e) {
-    e.preventDefault()
     this.setState({ show_dropdown: false })
     e.target.value = ''
   }
